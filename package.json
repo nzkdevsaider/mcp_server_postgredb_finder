@@ -1,0 +1,26 @@
+{
+  "name": "01-weather",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "^8.11.11"
+  },
+  "bin": {
+    "weather": "./build/index.js"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "pg": "^8.13.3",
+    "zod": "^3.24.2"
+  },
+  "scripts": {
+    "build": "tsc && bun -e \"require('fs').chmodSync('build/index.js', '755')\""
+  },
+  "files": [
+    "build"
+  ]
+}
