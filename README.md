@@ -1,4 +1,4 @@
-# 01-weather
+# MCP Server PostgreDB Finder
 
 To install dependencies:
 
